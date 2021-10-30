@@ -23,18 +23,7 @@ int SeconsInHours(int s)
 	return s / 3600;
 }
 
-//Напишите функцию IsYearOfApocalypse, определяющую был ли в указанный год апокалипсис 
-//(концы света были в 1992, 2005, 2011 годах). Напишите тесты. Сделайте коммит.
-bool IsYearOfApocalypse(int year)
-{
-	return (year == 1992 || year == 2005 || year == 2011);
-	
-}
-
 int main()
 {
-	assert(IsYearOfApocalypse(1992) == 1);
-   assert( IsYearOfApocalypse(2005)==1);
-   assert(IsYearOfApocalypse(2011) == 1);
-   assert(IsYearOfApocalypse(2012) == 0);
+   std::cout << IsLeapYear(2024);
 }
