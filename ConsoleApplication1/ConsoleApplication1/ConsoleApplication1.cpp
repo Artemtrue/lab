@@ -7,8 +7,6 @@ bool IsLeapYear(int year)
 	return false;
 }
 
-//Напишите функцию LaterInYear, проверяющую, какой из двух дней ближе к 
-//Новому году (31.12, грядущему, а не прошедшему). Сделайте коммит.
 int LaterInYear(int x1, int x2)
 {
 	assert(x1 < 32 && x1 > 0);
@@ -16,6 +14,13 @@ int LaterInYear(int x1, int x2)
 	if (x2 > x1) return x2;
 	else return x1;
 
+}
+
+//Напишите функцию DaysInYear, определяющую количество дней в данном году. Сделайте коммит.
+int DaysInYear(int year)
+{
+	if (IsLeapYear(year)) return 366;
+	return 365;
 }
 
 int main()
