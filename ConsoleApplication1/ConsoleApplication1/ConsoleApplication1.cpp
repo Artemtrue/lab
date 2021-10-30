@@ -18,6 +18,11 @@ int LaterInYear(int x1, int x2)
 
 }
 
+int SeconsInHours(int s)
+{
+	return s / 3600;
+}
+
 int main()
 {
    std::cout << IsLeapYear(2024);
