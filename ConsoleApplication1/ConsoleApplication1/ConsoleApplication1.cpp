@@ -6,6 +6,10 @@ bool IsLeapYear(int year)
 	return false;
 }
 
+int SecondsInMinute(int min)
+{
+	return min / 60;
+}
 
 int main()
 {
